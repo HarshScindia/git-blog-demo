@@ -24,3 +24,16 @@ def find_isolated_nodes(graph):
         if not graph[node]:
             isolated += node
     return isolated
+
+# Graphs as a python class
+""" A Python Class a simple python graph class, demonstrating the essential
+facts and functionalities of graphs."""
+
+class Graph(object):
+    def __init__(self, graph_dict=None):
+        """ Initializes a graph object if no dictionary or None is given, an
+        empty dictionary will be used"""
+        if graph_dict == None:
+            graph_dict = {}
+        self.__graph_dict = graph.dict
+
