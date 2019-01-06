@@ -15,3 +15,12 @@ def generate_edges(graph):
     return edges
 
 print(generate_edges(graph))
+
+# function to find isolated nodes
+def find_isolated_nodes(graph):
+    """ returns a list of isolated nodes. """
+    isolated = []
+    for node in graph:
+        if not graph[node]:
+            isolated += node
+    return isolated
