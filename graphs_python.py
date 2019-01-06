@@ -36,4 +36,12 @@ class Graph(object):
         if graph_dict == None:
             graph_dict = {}
         self.__graph_dict = graph.dict
+    
+    def vertices(self):
+        """ returns the vertices of a graph """
+        return list(self.__graph_dict.keys())
+
+    def edges(self):
+        """ returns the edges of a graph """
+        return self.__generate_edges()
 
