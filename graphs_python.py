@@ -82,9 +82,33 @@ class Graph(object):
             res += str(edge) + " "
         return res
 if __name__ == "__main__":
+
     g = { "a" : ["d"],
           "b" : ["c"],
           "c" : ["b", "c", "d", "e"],
           "e" : ["c"],
           "f" : []
         }
+    graph = Graph(g)
+
+    print("Vertices of graph:")
+    print(graph.vertices())
+    
+    print("Edges of graph:")
+    print(graph.edges())
+
+    print("Add vertex:")
+    graph.add_vertex("z")
+
+    print("Vertices of graph")
+    print(graph.vertices())
+
+    print("Edges of graph:")
+    print(graph.edges())
+
+    print('Adding an edge {"x", "y"} with new vertices:')
+    graph.add_edge({"x", "y"})
+    print("Vertices of graph:")
+    print(graph.vertices())
+    print("Edges of graph:")
+    print(graph.edges())
