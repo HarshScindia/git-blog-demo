@@ -72,3 +72,19 @@ class Graph(object):
                 if (neighbour, vertex)  not in edges:
                     edges.append({vertex, neighbour})
         return edges
+
+    def __str__(self):
+        res = "vertices: "
+        for k in self.__graph_dict:
+            res += str(k) + " "
+        res += "\nedges: "
+        for edge in self.__generate_edges():
+            res += str(edge) + " "
+        return res
+if __name__ == "__main__":
+    g = { "a" : ["d"],
+          "b" : ["c"],
+          "c" : ["b", "c", "d", "e"],
+          "e" : ["c"],
+          "f" : []
+        }
