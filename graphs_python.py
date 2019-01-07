@@ -44,13 +44,6 @@ class Graph(object):
     def edges(self):
         """ returns the edges of a graph """
         return self.__generate_edges()
-    
-    def generate_edges():
-        edges = []
-        for node in graph:
-            for neighbour in graph[node]:
-                edges.append((node, neighbour))
-        return edges
 
     def add_vertex(self, vertex):
         """ If the vertex "vertex" is not in self.__graph_dict, a key  "vertex'
@@ -68,3 +61,14 @@ class Graph(object):
             self.__graph_dict[vertex1].append(vertex2)
         else:
             self.__graph_dict[vertex1] = [vertex2]
+
+
+    def __generate_edges(self):
+        """ A static method generating the edges of the graph "graph". 
+        Edges are represented as sets with one (a loop back to the vertex) or two vertices"""
+        edges = []
+        for vertex in self.__graph_dict:
+            for neigbour is self.__graph_dict[vertex]:
+                if (neighbour, vertex)  not in edges:
+                    edges.append({vertex, neighbour})
+        return edges
