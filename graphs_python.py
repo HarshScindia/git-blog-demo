@@ -44,4 +44,10 @@ class Graph(object):
     def edges(self):
         """ returns the edges of a graph """
         return self.__generate_edges()
-
+    
+    def generate_edges():
+        edges = []
+        for node in graph:
+            for neighbour in graph[node]:
+                edges.append((node, neighbour))
+        return edges
