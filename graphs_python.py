@@ -35,7 +35,7 @@ class Graph(object):
         empty dictionary will be used"""
         if graph_dict == None:
             graph_dict = {}
-        self.__graph_dict = graph.dict
+        self.__graph_dict = graph_dict
     
     def vertices(self):
         """ returns the vertices of a graph """
