@@ -68,7 +68,7 @@ class Graph(object):
         Edges are represented as sets with one (a loop back to the vertex) or two vertices"""
         edges = []
         for vertex in self.__graph_dict:
-            for neigbour is self.__graph_dict[vertex]:
+            for neigbour in self.__graph_dict[vertex]:
                 if (neighbour, vertex)  not in edges:
                     edges.append({vertex, neighbour})
         return edges
