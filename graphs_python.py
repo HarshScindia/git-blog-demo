@@ -81,6 +81,13 @@ class Graph(object):
         for edge in self.__generate_edges():
             res += str(edge) + " "
         return res
+
+    def find_path(self, start_vertex, end_vertex, path=None):
+        """ find a path from star_vertex to end_vertex in graph """
+        if path == None:
+            path = []
+        graph = self.__graph_dict
+
 if __name__ == "__main__":
 
     g = { "a" : ["d"],
