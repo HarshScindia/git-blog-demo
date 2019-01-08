@@ -98,6 +98,9 @@ class Graph(object):
                 if extended_path:
                     return extended_path
         return None
+
+    def find_all_paths(self, start_vertex, end_vertex, path=[]):
+        """ find all paths from start vertex to end_vertex in graph """
 if __name__ == "__main__":
 
     g = { "a" : ["d"],
