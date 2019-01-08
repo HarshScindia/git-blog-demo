@@ -112,6 +112,25 @@ class Graph(object):
                 for p in extended_paths:
                     paths.append(p)
         return paths
+    
+    def vertex_degree(self, vertex):
+        """ The degree of a vertex is the number of edges connecting it, i,e,
+        the number of adjacent vertices. loops are counted double, i.e every occurence
+        of vertex in the list"""
+        adj_vertices = self.__graph_dict[vertex]
+        degree = len(adj_vertices) + adj_vertices.count(vertex)
+        return degree
+
+    def find_isolated_vertices(self):
+        """ return a list of isolated vertices. """
+        graph = self.__graph_dict
+        isolated = []
+        for vertex in graph:
+            print(isolated, vertex)
+            if not graph[vertex]:
+                isolated += [vertex]
+        return isolated
+
 if __name__ == "__main__":
 
     g = { "a" : ["d"],
