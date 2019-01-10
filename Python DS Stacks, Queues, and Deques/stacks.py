@@ -15,7 +15,10 @@ class Stack:
             Runtime: The runtime for this method is O(1), or constant time, because all
             it does is index to the list item of the list .
         """
-        return self.items.pop()
+        if self.items:
+            return self.items.pop()
+        return None
+
 
     def peek(self):
         pass
