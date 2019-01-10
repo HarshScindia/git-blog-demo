@@ -11,7 +11,7 @@ class Stack:
         self.items.append(item)
 
     def pop(self):
-        pass
+        return self.items.pop()
 
     def peek(self):
         pass
