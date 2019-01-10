@@ -21,7 +21,7 @@ class Stack:
 
 
     def peek(self):
-        pass
+        return self.items[-1]
 
     def size(self):
         pass
