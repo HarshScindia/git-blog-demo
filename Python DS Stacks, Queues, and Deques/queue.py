@@ -2,10 +2,10 @@
 
 class Queue:
     def __init__(self):
-        self.item = []
+        self.items = []
 
-    def enqueue(self, items):
-        pass
+    def enqueue(self, item):
+        self.itmes.insert(0, item)
 
     def dequeu(self):
         pass
