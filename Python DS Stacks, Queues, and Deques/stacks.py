@@ -11,6 +11,10 @@ class Stack:
         self.items.append(item)
 
     def pop(self):
+        """ Return the last item from the list which is also the last item of the stack
+            Runtime: The runtime for this method is O(1), or constant time, because all
+            it does is index to the list item of the list .
+        """
         return self.items.pop()
 
     def peek(self):
