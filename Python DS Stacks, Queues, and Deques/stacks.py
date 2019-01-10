@@ -31,6 +31,10 @@ class Stack:
         return None
 
     def size(self):
+        """ This method returns the length of the list that is representing the stack
+            Runtime  This method runs in constant time because finding the length of the list
+            also happens in constant time 
+        """
         return len(self.items)
 
     def is_empty(self):
