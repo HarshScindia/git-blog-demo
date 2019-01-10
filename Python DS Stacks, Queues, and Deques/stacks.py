@@ -38,6 +38,9 @@ class Stack:
         return len(self.items)
 
     def is_empty(self):
+        """ This method returns a boolean value describing wether or not the stack is emtpy
+            Testing for equality happens in constant time 
+        """
         return self.items == []
 
 
