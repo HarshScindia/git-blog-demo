@@ -38,6 +38,6 @@ class Stack:
         return len(self.items)
 
     def is_empty(self):
-        pass
+        return self.items == []
 
 
