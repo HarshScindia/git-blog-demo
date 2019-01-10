@@ -21,6 +21,11 @@ class Stack:
 
 
     def peek(self):
+        """ This  method returns the last item in the list. which is also item at the
+            top of the stack. 
+            Runtime: This method runs in constant time because indexing into a list is done
+            in constant time 
+        """
         if self.items:
             return self.items[-1]
         return None
