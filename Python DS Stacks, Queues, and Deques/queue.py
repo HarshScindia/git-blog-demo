@@ -15,7 +15,7 @@ class Queue:
         self.itmes.insert(0, item)
 
     def dequeu(self):
-        pass
+        self.items.pop()
 
     def peek(self):
         pass
