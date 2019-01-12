@@ -15,6 +15,11 @@ class Queue:
         self.itmes.insert(0, item)
 
     def dequeu(self):
+        """ Returns and removes the first most item of the queue, which is represented by
+            the last item in the list.
+            Runtime: The runtime is O(1), because indexing to the end of a list happens in
+            constant time.
+        """
         if self.items:
             self.items.pop()
         return None
