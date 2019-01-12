@@ -25,6 +25,11 @@ class Queue:
         return None
 
     def peek(self):
+        """ Returns the last item in the list, which represents the first item
+            in the queue
+            Runtime: is constant time because we are just indexing ]
+            to the last item of the list
+        """
         if self.items:
             return self.items[-1]
         return None
