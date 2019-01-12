@@ -41,4 +41,8 @@ class Queue:
         return len(self.items)
 
     def is_empty(self):
-        pass
+        """ Returns a boolean value expressing or not the list representing the queue
+            is empty
+            Runtime: Runs in O(1), or constant time for simple equality checks
+        """
+        return self.items == []
