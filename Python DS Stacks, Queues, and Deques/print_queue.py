@@ -29,3 +29,14 @@ class PrintQueue:
 
     def is_empty(self):
         pass
+
+
+class Job:
+    def __init__(self):
+        self.pages = 0
+
+    def print_pages(self):
+        pass
+
+    def check_complete(self):
+        pass
