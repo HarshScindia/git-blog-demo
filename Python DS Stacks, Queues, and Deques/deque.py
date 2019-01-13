@@ -41,15 +41,18 @@ class Deque:
         return None
 
     def peek_front(self):
-        """ 
-
+        """ Returns the value found at the 0th index of the list, which represents
+            the front of the deque.
+            Runtime: is O(1)/constant because all we are doing is indexing into a list.
         """
         if self.items:
             return self.items[0]
         return None
 
     def peek_rear(self):
-        """
+        """ Retuns the value found at end of the list which represents the rear
+            of the deque.
+            Runtime: is O(1)/ constant because all we are doing is indexing into a list
         """
         if self.items:
             return self.items[-1]
