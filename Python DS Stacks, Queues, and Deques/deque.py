@@ -59,7 +59,7 @@ class Deque:
         return None
 
     def size(self):
-        pass
+        return len(self.items)
 
     def is_empty(self):
-        pass
+        return self.items == []
