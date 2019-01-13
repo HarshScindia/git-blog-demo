@@ -59,7 +59,16 @@ class Deque:
         return None
 
     def size(self):
+        """ Returns the length of the list, which is representing the deque.
+            Runtime will be constant because all we're doing is finding the
+            length of a list and returning that value.
+        """
         return len(self.items)
 
     def is_empty(self):
+        """ Checks to see if the list representing our Deque is empty. 
+            returns True if so, or false if it is'nt.
+            The runtime is constant because all we're doing is comparing two
+            values
+        """
         return self.items == []
