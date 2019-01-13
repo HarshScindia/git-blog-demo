@@ -20,10 +20,11 @@ class Deque:
         self.items.append(item)
 
     def remove_front(self):
-        pass
+        return self.items.pop(0)
+
 
     def remove_rear(self):
-        pass
+        return self.items.pop()
 
     def peek_front(self):
         pass
