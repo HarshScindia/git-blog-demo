@@ -4,10 +4,10 @@ class Deque:
         self.items = []
 
     def add_front(self, item):
-        pass
+        self.items.insert(0, item)
 
     def add_rear(self, item):
-        pass
+        self.items.append(item)
 
     def remove_front(self):
         pass
