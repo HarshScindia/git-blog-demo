@@ -41,10 +41,19 @@ class Deque:
         return None
 
     def peek_front(self):
-        pass
+        """ 
+
+        """
+        if self.items:
+            return self.items[0]
+        return None
 
     def peek_rear(self):
-        pass
+        """
+        """
+        if self.items:
+            return self.items[-1]
+        return None
 
     def size(self):
         pass
