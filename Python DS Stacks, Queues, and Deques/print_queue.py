@@ -19,7 +19,8 @@ class PrintQueue:
         self.items.insert(0, item)
 
     def deque(self):
-        pass
+        if self.items:
+            return self.items.pop()
 
     def peek(self):
         pass
