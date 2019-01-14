@@ -42,5 +42,15 @@ class Stack:
     def is_empty(self):
         return self.items == []
 
-def  balanced_symbols():
-
+def balanced_symbols(symbol_string):
+    balanced = False
+    balance_stack = Stack()
+    symbol_list symbol_string.split()
+    for i in symbol_list:
+        if i == '(' or '{' or '[':
+            balance_list.push(i)
+        elif i == ')' or '}' or ']':
+            if i == balance_stack.peek():
+                balance_stack.pop()
+            else:
+                balance_stack.push(i)
