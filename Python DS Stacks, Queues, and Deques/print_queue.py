@@ -40,3 +40,12 @@ class Job:
 
     def check_complete(self):
         pass
+class Printer:
+    def __init__(self):
+        pass
+
+    def get_job(self):
+        pass
+
+    def print_job(self):
+        pass
