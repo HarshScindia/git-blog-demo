@@ -22,5 +22,23 @@ The function should return True if the symbol string is balanced or False if it 
     [}([){]
 """
 class Stack:
-    def __init__(self, items):
+    def __init__(self):
+        self.items = []
+    
+    def push(self, item):
+        pass
+
+    def pop(self, item):
+        pass
+
+    def peek(self):
+        pass
+
+    def size(self):
+        pass
+
+    def is_empty(self):
+        pass
+
+def  balanced_symbols():
 
