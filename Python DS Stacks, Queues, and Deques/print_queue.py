@@ -15,8 +15,8 @@ class PrintQueue:
     def __init__(self):
         self.items = []
 
-    def enqueue(self, items):
-        pass
+    def enqueue(self, item):
+        self.items.insert(0, item)
 
     def deque(self):
         pass
