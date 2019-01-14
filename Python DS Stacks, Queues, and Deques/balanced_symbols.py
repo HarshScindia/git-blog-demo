@@ -26,19 +26,21 @@ class Stack:
         self.items = []
     
     def push(self, item):
-        pass
+        self.items.append(item)
 
     def pop(self, item):
-        pass
+        if self.items:
+            self.items.pop()
 
     def peek(self):
-        pass
+        if self.items:
+            self.items[-1]
 
     def size(self):
-        pass
+        return len(self.items)
 
     def is_empty(self):
-        pass
+        return self.items == []
 
 def  balanced_symbols():
 
