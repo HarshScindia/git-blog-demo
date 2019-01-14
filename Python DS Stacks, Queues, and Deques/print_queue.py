@@ -27,7 +27,7 @@ class PrintQueue:
             return self.items[-1]
 
     def size(self):
-        pass
+        return len(self.itmes)
 
     def is_empty(self):
         pass
