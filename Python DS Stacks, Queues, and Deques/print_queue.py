@@ -23,7 +23,8 @@ class PrintQueue:
             return self.items.pop()
 
     def peek(self):
-        pass
+        if self.items:
+            return self.items[-1]
 
     def size(self):
         pass
