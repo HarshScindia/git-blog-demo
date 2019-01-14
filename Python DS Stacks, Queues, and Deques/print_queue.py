@@ -30,7 +30,7 @@ class PrintQueue:
         return len(self.itmes)
 
     def is_empty(self):
-        pass
+        return self.items == []
 
 
 class Job:
