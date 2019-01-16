@@ -42,6 +42,7 @@ class Stack:
     def is_empty(self):
         return self.items == []
 
+# my_function
 def balanced_symbols(symbol_string):
     balanced = False
     balance_stack = Stack()
@@ -54,3 +55,21 @@ def balanced_symbols(symbol_string):
                 balance_stack.pop()
             else:
                 balance_stack.push(i)
+
+def match_symbols(symbol_str):
+    symbol_pairs = {
+            '(':')',
+            '[':']',
+            '{':'}'
+            }
+
+    openers = symbol_pairs.keys()
+    my_stack = Stack()
+    index = 0
+    while index < len(symbol_str):
+        symbol = symbol_str[index]
+
+        if symbol in openers:
+            my_stack.push(symbol)
+        else: # The symbol is a closer
+
